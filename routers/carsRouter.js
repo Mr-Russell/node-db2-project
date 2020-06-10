@@ -49,7 +49,7 @@ router.delete("/:id", validateID, (req, res)=>{
   db("cars")
     .where({id: req.car})
     .delete()
-    .then(deleted => res.status(200).json(`Car ${req.car} has been Updated`))
+    .then(deleted => res.status(200).json(`Car ${req.car} has been Deleted`))
 })
 
 
